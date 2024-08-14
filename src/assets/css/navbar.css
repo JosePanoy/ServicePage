@@ -99,7 +99,7 @@
   
   .hidden-panel {
     position: fixed;
-    top: 45px;
+    top: 50px;
     left: -250px;
     width: 250px;
     height: 100%;
