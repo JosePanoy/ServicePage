@@ -144,7 +144,7 @@ function MarketingPlan() {
                 <div className="image-box">
                     <animated.img style={fadeInRightA} src={img4} alt="Image 4" className="marketing-img" />
                     <animated.h2 style={fadeInRightB}>Photography</animated.h2>
-                    <animated.p style={fadeInRightC}>Beatiful, high-end photography is a central part of our marketing plan for your property.</animated.p>
+                    <animated.p style={fadeInRightC}>Beautiful, high-end photography is a central part of our marketing plan for your property.</animated.p>
                 </div>
             </div>
         </animated.div>
