@@ -16,7 +16,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     color: hsla(0, 0%, 14%, 0.871);
-    background-color: hsl(0, 0%, 87%);
+    background-color: hsl(0, 0%, 100%);
   }
 
 }

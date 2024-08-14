@@ -1,65 +1,100 @@
 
-  
-  .container {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    gap: 10px;
-    padding: 20px;
-    position: relative;
-    top: 650px;
-    border: 1px dotted red;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .title-h1 {
+.marketing-container {
+    padding: 5px;
     text-align: center;
-    font-size: 3rem;
-    cursor: default;
+    position: relative;
+    top: 600px;
+}
+
+.title-h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
     font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
     font-weight: 700;
-  }
-  
-  .image-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: -15px;
+    cursor: default;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
     border: 1px dotted red;
-  }
-  
-  .image-row img {
-    width: 30%; 
+}
+
+.marketing-img {
+    width: 50%;
     height: auto;
-    margin: 0 auto; 
-  }
-  
-  .title-h2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    font-size: 1.5rem;
-    text-align: center; 
-    cursor: default;
-    margin-top: -20px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: -15px;
+    font-size: 2em;
+    margin-bottom: 5px;
     font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
-    font-weight: 300;
-    border: 1px dotted red;
-  }
-  
-  .caption-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    border: 1px dotted red;
-  }
-  
-  .caption-row p {
+    font-weight: 700;
+    cursor: default;
+}
+
+p {
+    font-size: 1.1em;
     margin: 0;
-    text-align: center; 
-    cursor: default;
-    margin-top: -20px;
     font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
-    font-weight: 300;
-    border: 1px dotted red;
-  }
-  
+    font-weight: 600;
+    cursor: default;
+}
+
+/* Responsive Styles */
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+    .title-h1 {
+        font-size: 1.5em;
+    }
+
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box {
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .title-h1 {
+        font-size: 1.8em;
+    }
+
+    .image-row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .image-box {
+        max-width: 45%;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

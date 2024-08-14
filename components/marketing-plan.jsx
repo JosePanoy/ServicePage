@@ -11,80 +11,76 @@ function MarketingPlan() {
     const { ref, inView } = useInView({
         triggerOnce: false, 
         threshold: 0.1,
-      });
+    });
 
-      const fadeInLeft1 = useSpring({
+    const fadeInLeft1 = useSpring({
         opacity: 1,
         transform: 'translateX(0)',
         from: { opacity: 0, transform: 'translateX(-30px)' },
         config: { duration: 1000, easing: easings.linear },
         reset: true,
-      });
+    });
 
-      const fadeInLeft2 = useSpring({
+    const fadeInLeft2 = useSpring({
         opacity: 1,
         transform: 'translateX(0)',
         from: { opacity: 0, transform: 'translateX(-30px)' },
         config: { duration: 1200, easing: easings.linear },
         reset: true,
-      });
+    });
 
-
-      const fadeInLeft3 = useSpring({
+    const fadeInLeft3 = useSpring({
         opacity: 1,
         transform: 'translateX(0)',
         from: { opacity: 0, transform: 'translateX(-30px)' },
         config: { duration: 1400, easing: easings.linear },
         reset: true,
-      });
+    });
 
-
-      const fadeInRight1 = useSpring({
+    const fadeInRight1 = useSpring({
         opacity: 1,
         transform: 'translateX(0)',
         from: { opacity: 0, transform: 'translateX(30px)' },
         config: { duration: 1000 },
         reset: true,
-      });
+    });
 
-      const fadeInRight2 = useSpring({
+    const fadeInRight2 = useSpring({
         opacity: 1,
         transform: 'translateX(0)',
         from: { opacity: 0, transform: 'translateX(30px)' },
         config: { duration: 1200 },
         reset: true,
-      });
+    });
 
-      const fadeInRight3 = useSpring({
+    const fadeInRight3 = useSpring({
         opacity: 1,
         transform: 'translateX(0)',
         from: { opacity: 0, transform: 'translateX(30px)' },
         config: { duration: 1400 },
         reset: true,
-      });
+    });
 
-      const fadeInFromTop1 = useSpring({
+    const fadeInFromTop1 = useSpring({
         opacity: inView ? 1 : 0,
         transform: inView ? 'translateY(0)' : 'translateY(-50px)', 
         config: { duration: 1000 },
     });
 
     return (
-        <animated.div ref={ref} className="container">
-
-
+        <animated.div ref={ref} className="marketing-container">
             <animated.h1 style={fadeInFromTop1} className="title-h1">Comprehensive Marketing Plan</animated.h1>
             <div className="image-row">
-                <animated.img style={fadeInLeft1} src={img1} alt="Image 1" />
-                <animated.img style={fadeInRight1}src={img2} alt="Image 2" />
-            </div>
-            <div className="title-h2">
-                <animated.h2 style={fadeInLeft2}>Responsive</animated.h2>
-                <animated.h2 style={fadeInRight2}>Syndication</animated.h2>
-            </div>
-            <div className="caption-row">
-                <animated.p style={fadeInLeft3}>I am always available via phone, text, or email.</animated.p>
-                <animated.p style={fadeInRight3}>I market your property locally, nationally, and internationally</animated.p>
+                <div className="image-box">
+                    <animated.img style={fadeInLeft1} src={img1} alt="Image 1" className="marketing-img" />
+                    <animated.h2 style={fadeInLeft2}>Responsive</animated.h2>
+                    <animated.p style={fadeInLeft3}>I am always available via phone, text, or email.</animated.p>
+                </div>
+                <div className="image-box">
+                    <animated.img style={fadeInRight1} src={img2} alt="Image 2" className="marketing-img" />
+                    <animated.h2 style={fadeInRight2}>Syndication</animated.h2>
+                    <animated.p style={fadeInRight3}>I market your property locally, nationally, and internationally</animated.p>
+                </div>
             </div>
         </animated.div>
     );
