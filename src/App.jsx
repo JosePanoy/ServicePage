@@ -3,6 +3,7 @@ import Navbar from '../components/navbar'
 import ServiceIMG from '../components/service-bckg'
 import MarketingPlan from '../components/marketing-plan'
 import Feature1 from '../components/feature1'
+import MarketHome from '../components/markethome'
 
 
 
@@ -16,6 +17,7 @@ function App() {
     <ServiceIMG style={{marginBottom: '100px'}}/>
     <MarketingPlan />
     <Feature1 />
+    <MarketHome />
     </>
 
   )
