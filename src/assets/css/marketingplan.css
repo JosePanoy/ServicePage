@@ -2,7 +2,7 @@
     padding: 5px;
     text-align: center;
     position: relative;
-    top: 600px;
+    top: 680px;
 }
 
 .title-h1 {
@@ -56,11 +56,11 @@ p {
 /* Responsive Styles */
 @media only screen and (min-width: 300px) and (max-width: 480px) {
     .marketing-container{
-        margin-top: 70px;
+        margin-top: 80px;
     }
     
     .title-h1 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .image-row {
