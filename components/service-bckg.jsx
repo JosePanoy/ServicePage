@@ -10,6 +10,13 @@ function ServiceIMG() {
         >
             <div className="overlay">
                 <div className="caption">Services</div>
+                <div className="search-bar-container">
+                    <input
+                        type="text"
+                        className="search-bar"
+                        placeholder="Search for services..."
+                    />
+                </div>
             </div>
         </div>
     );

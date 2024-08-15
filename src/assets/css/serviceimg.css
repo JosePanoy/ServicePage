@@ -9,10 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
-
 
 .overlay {
     position: absolute;
@@ -22,6 +19,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5); 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -32,4 +30,56 @@
     font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
     font-weight: 500;
     cursor: default;
+    margin-bottom: 20px;
+}
+
+.search-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-bar {
+    width: 400px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    outline: none;
+    color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .caption {
+        font-size: 2.5rem;
+    }
+    
+    .search-bar {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .caption {
+        font-size: 2rem;
+    }
+
+    .search-bar {
+        margin-top: -10px;
+        width: 90%;
+    }
 }
