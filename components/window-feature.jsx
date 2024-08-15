@@ -16,28 +16,28 @@ function WindowFeature() {
 
   const fadeInLeft1 = useSpring({
     opacity: inView ? 1 : 0,
-    transform: inView ? 'translateX(0)' : 'translateX(-50px)',
+    transform: inView ? 'translateX(0)' : 'translateX(-20px)',
     config: { duration: 500, easing: easings.linear },
     delay: 500,
   });
 
   const fadeInRight1 = useSpring({
     opacity: inView ? 1 : 0,
-    transform: inView ? 'translateX(0)' : 'translateX(50px)',
+    transform: inView ? 'translateX(0)' : 'translateX(20px)',
     config: { duration: 500 },
     delay: 700,
   });
 
   const fadeInLeft2 = useSpring({
     opacity: inView ? 1 : 0,
-    transform: inView ? 'translateX(0)' : 'translateX(-50px)',
+    transform: inView ? 'translateX(0)' : 'translateX(-20px)',
     config: { duration: 700, easing: easings.linear },
     delay: 900,
   });
 
   const fadeInRight2 = useSpring({
     opacity: inView ? 1 : 0,
-    transform: inView ? 'translateX(0)' : 'translateX(50px)',
+    transform: inView ? 'translateX(0)' : 'translateX(20px)',
     config: { duration: 900 },
     delay: 1100,
   });

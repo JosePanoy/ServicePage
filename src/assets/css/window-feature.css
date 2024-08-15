@@ -1,6 +1,6 @@
 .grid-container {
     position: relative;
-    top: 2600px;
+    top: 2400px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0;
@@ -78,15 +78,15 @@
     list-style-type: disc;
     margin: 5px 0;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: default;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 380px) and (max-width: 480px) {
     .grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, auto);
-  
+        margin-top: -50px;
     }
 
     .black-background {
