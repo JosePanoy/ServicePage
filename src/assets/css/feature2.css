@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 2600px;
+    top: 2900px;
   }
   
   .overlay-feature2 {
@@ -102,7 +102,7 @@
     }
   
     .feature1-container{
-      margin-top: 100px;
+      margin-top: 500px;
     }
   
   }
