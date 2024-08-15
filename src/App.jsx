@@ -5,6 +5,7 @@ import MarketingPlan from '../components/marketing-plan'
 import Feature1 from '../components/feature1'
 import Feature2 from '../components/feature2'
 import MarketHome from '../components/markethome'
+import WindowFeature from '../components/window-feature'
 
 
 
@@ -20,6 +21,7 @@ function App() {
     <Feature1 />
     <MarketHome />
     <Feature2 />
+    <WindowFeature />
     </>
 
   )
