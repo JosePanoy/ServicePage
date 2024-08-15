@@ -8,6 +8,7 @@ import MarketHome from '../components/markethome'
 import WindowFeature from '../components/window-feature'
 import LaptopImg from '../components/laptop-img'
 import WindowFeature2 from '../components/window-feature2'
+import WindowFeature3 from '../components/window-feature3'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <WindowFeature />
     <LaptopImg />
     <WindowFeature2 />
+    <WindowFeature3 />
     </>
 
   )
