@@ -73,7 +73,7 @@ function Feature2() {
 
   return (
     <div className="feature2-container" style={{ backgroundImage: `url(${feature2})` }}>
-      <div className="overlay">
+      <div className="overlay-feature2">
         <h1>The Buying Process</h1>
         <div className="content">
           <div className="row">
