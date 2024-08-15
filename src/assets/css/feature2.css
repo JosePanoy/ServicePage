@@ -21,7 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: auto; /* Changed from 60% to auto to allow dynamic height */
+    height: auto; 
     background: rgba(32, 32, 32, 0.634);
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    overflow: hidden; /* Ensure content does not overflow */
+    overflow: hidden; 
   }
   
   .overlay-feature2 h1 {
@@ -75,7 +75,7 @@
   
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     .overlay-feature2 {
-      width: 90%; /* Adjusted width for tablet view */
+      width: 90%; 
       padding: 15px;
     }
   
@@ -86,13 +86,13 @@
     .box {
       margin-right: 0;
       margin-bottom: 20px;
-      max-width: 90%; /* Ensure box doesn't exceed container width */
+      max-width: 90%; 
     }
   }
   
   @media only screen and (min-width: 300px) and (max-width: 480px) {
     .overlay-feature2 {
-      width: 95%; /* Adjusted width for mobile view */
+      width: 95%;
       padding: 10px;
     }
   
@@ -103,7 +103,7 @@
     .box {
       margin-right: 0;
       margin-bottom: 20px;
-      max-width: 100%; /* Ensure box fills the container width */
+      max-width: 100%; 
     }
   
     .overlay-feature2 h1 {
@@ -111,7 +111,7 @@
     }
   
     .box h2 {
-      font-size: 2rem; /* Adjusted font size for mobile view */
+      font-size: 2rem; 
     }
   
     .box p {
@@ -120,7 +120,7 @@
     }
   
     .feature2-container {
-      margin-top: 20px;
+      margin-top: 200px;
     }
   }
   
