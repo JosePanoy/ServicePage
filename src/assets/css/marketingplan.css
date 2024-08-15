@@ -2,6 +2,7 @@
     padding: 5px;
     text-align: center;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .title-h1 {
@@ -17,7 +18,7 @@
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
-    margin-bottom: 10px; /* Added margin for separation between rows */
+    margin-bottom: 10px; 
 }
 
 .image-box {

@@ -32,7 +32,7 @@ function ServiceIMG() {
           <input
             type="text"
             className="search-bar"
-            placeholder="Search for services..."
+            placeholder="Search by Address or Area..."
           />
         </animated.div>
       </animated.div>
