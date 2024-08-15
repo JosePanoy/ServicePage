@@ -36,6 +36,16 @@
 
     .box {
         padding: 5px;
+
+    }
+
+    .box h2{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .box p {
+        text-align: justify;
     }
 }
 
