@@ -23,7 +23,7 @@ function WindowFeature() {
 
   const fadeInRight1 = useSpring({
     opacity: inView ? 1 : 0,
-    transform: inView ? 'translateX(0)' : 'translateX(20px)',
+    transform: inView ? 'translateX(0)' : 'translateX(-20px)',
     config: { duration: 500 },
     delay: 700,
   });
@@ -37,7 +37,7 @@ function WindowFeature() {
 
   const fadeInRight2 = useSpring({
     opacity: inView ? 1 : 0,
-    transform: inView ? 'translateX(0)' : 'translateX(20px)',
+    transform: inView ? 'translateX(0)' : 'translateX(-20px)',
     config: { duration: 900 },
     delay: 1100,
   });
