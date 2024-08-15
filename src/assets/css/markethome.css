@@ -57,7 +57,7 @@
     .market-home-container {
       grid-template-rows: auto auto auto;
       gap: 5px;
-      margin-top: 100px;
+      margin-top: 70px;
     }
   
     .row-2 {

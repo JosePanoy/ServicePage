@@ -1,18 +1,18 @@
-*{
+* {
     font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
   }
   
   .feature2-container {
     position: absolute;
-    left: 0; 
-    right: 0; 
+    left: 0;
+    right: 0;
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 2900px;
+    top: 2850px;
   }
   
   .overlay-feature2 {
@@ -21,7 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 60%;
+    height: auto; /* Changed from 60% to auto to allow dynamic height */
     background: rgba(32, 32, 32, 0.634);
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
+    overflow: hidden; /* Ensure content does not overflow */
   }
   
   .overlay-feature2 h1 {
@@ -43,21 +44,22 @@
     width: 90%;
     max-width: 1200px;
   }
-  .box h2{
+  
+  .box h2 {
     letter-spacing: 2px;
     font-size: 2.5rem;
   }
   
-  .box p{
+  .box p {
     letter-spacing: 2px;
     font-size: 1rem;
   }
+  
   .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
-  
   }
   
   .box {
@@ -65,7 +67,6 @@
     max-width: 400px;
     padding: 15px 10px;
     box-sizing: border-box;
-  
   }
   
   .box:not(:last-child) {
@@ -73,36 +74,53 @@
   }
   
   @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .overlay-feature2 {
+      width: 90%; /* Adjusted width for tablet view */
+      padding: 15px;
+    }
+  
     .row {
       flex-direction: column;
     }
+  
     .box {
       margin-right: 0;
       margin-bottom: 20px;
+      max-width: 90%; /* Ensure box doesn't exceed container width */
     }
   }
   
-  
   @media only screen and (min-width: 300px) and (max-width: 480px) {
+    .overlay-feature2 {
+      width: 95%; /* Adjusted width for mobile view */
+      padding: 10px;
+    }
+  
     .row {
       flex-direction: column;
     }
+  
     .box {
       margin-right: 0;
       margin-bottom: 20px;
+      max-width: 100%; /* Ensure box fills the container width */
     }
   
-    .overlay h1 {
+    .overlay-feature2 h1 {
       font-size: 1.8rem;
     }
   
-    .box p{
+    .box h2 {
+      font-size: 2rem; /* Adjusted font size for mobile view */
+    }
+  
+    .box p {
       letter-spacing: 2px;
       font-size: 0.8rem;
     }
   
-    .feature1-container{
-      margin-top: 1000px;
+    .feature2-container {
+      margin-top: 20px;
     }
-  
   }
+  
