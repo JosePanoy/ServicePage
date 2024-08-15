@@ -5,7 +5,7 @@
     gap: 10px;
 }
 
-.box {
+.boxf {
     padding: 10px;
 }
 
@@ -14,7 +14,7 @@
     height: auto;
 }
 
-.box li{
+.boxf li{
     cursor: default;
 }
 
@@ -34,17 +34,17 @@
         grid-template-rows: auto;
     }
 
-    .box {
+    .boxf {
         padding: 5px;
 
     }
 
-    .box h2{
+    .boxf h2{
         font-size: 1.7rem;
         text-align: center;
     }
 
-    .box p {
+    .boxf p {
         text-align: justify;
     }
 }
@@ -55,7 +55,7 @@
         grid-template-rows: auto;
     }
 
-    .box {
+    .boxf {
         padding: 8px;
     }
 }
