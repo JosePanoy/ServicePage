@@ -1,6 +1,5 @@
 .grid-container {
     position: relative;
-    top: 2400px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0;

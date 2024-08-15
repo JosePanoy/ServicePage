@@ -3,7 +3,7 @@
   }
   
   .feature2-container {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     background-size: cover;
@@ -12,9 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 2650px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+
   }
   
   .overlay-feature2 {
