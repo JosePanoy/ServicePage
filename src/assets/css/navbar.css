@@ -187,8 +187,8 @@
       display: flex;
       align-items: center;
       gap: 15px;
-      margin-right: 10px;
-      margin-left: -10px;
+      margin-right: 5px;
+      margin-left: -5px;
     }
   
     .hidden-panel {
@@ -197,7 +197,7 @@
     }
 
     .toggle-bar{
-      margin-right: -10px;
+      margin-left: -10px;
     }
 
 
