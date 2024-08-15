@@ -66,15 +66,15 @@ function WindowFeature() {
         </ul>
       </div>
 
-      <div className="grid-item black-background">
+      <animated.div  className="grid-item black-background">
         <h2>Intentional Layout</h2>
-      </div>
+      </animated.div>
 
       <animated.div className="grid-item" style={fadeInRight1}>
         <img src={pic3} alt="Pic 3" />
       </animated.div>
 
-      <animated.div className="grid-item" style={fadeInLeft2}>
+      <animated.div  className="grid-item" style={fadeInLeft2}>
         <img src={pic4} alt="Pic 4" />
       </animated.div>
 
