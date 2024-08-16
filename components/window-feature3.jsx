@@ -12,7 +12,7 @@ function WindowFeature3() {
     return (
         <div className="unique-grid">
             <div className="unique-item image-large">
-                <img src={pic1} alt="pic1" style={{ width: '40%', height: 'auto' }} />
+                <img src={pic1} alt="pic1" style={{ width: '40%', height: 'auto', marginBottom: '5px' }} />
             </div>
             <div className="unique-item text-content">
                 <h2>Leading Real Estate Companies of The World® & Luxury Portfolio International</h2>
@@ -35,9 +35,7 @@ function WindowFeature3() {
                 </div>
                 <p>We also have several well-positioned affiliate offices in China, providing our clients with access to buyers in Hong Kong, Shanghai, and Beijing.</p>
             </div>
-            <div className="unique-item text-content">
-                <p>Through our international affiliations, we have a strong presence in over 50 countries. Our luxury listings are sent to prominent international real estate sites, reaching over 70 million potential buyers and investors worldwide through our relationships with:</p>
-            </div>
+
         </div>
     );
 }
