@@ -248,6 +248,7 @@
     .unique-grid-box > div {
         border: none;
         padding: 15px;
+        text-align: justify;
     }
 
     .item-3 {
@@ -274,6 +275,10 @@
     .item-7,
     .item-8 {
         text-align: center;
+    }
+
+    .item-7 {
+        font-size: 0.8rem;
     }
 }
 
