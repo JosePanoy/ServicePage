@@ -63,6 +63,17 @@
   .pic5 img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* or use 'cover' if you prefer filling the box */
+    object-fit: contain; 
   }
   
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .pic5 {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 480px) {
+    .pic5 {
+      display: none;
+    }
+  }
