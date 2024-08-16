@@ -10,6 +10,7 @@ import LaptopImg from '../components/laptop-img'
 import WindowFeature2 from '../components/window-feature2'
 import WindowFeature3 from '../components/window-feature3'
 import ContactUs from '../components/contact-us'
+import LastContent from '../components/content-last'
 
 import TestPage from '../components/testpage'
 
@@ -33,6 +34,7 @@ function App() {
 
     <TestPage />
     <ContactUs />
+    <LastContent />
     </>
 
   )

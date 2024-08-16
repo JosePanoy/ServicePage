@@ -2,7 +2,7 @@
     position: relative;
     width: 100vw;
     height: 670px;
-    background-image: url('../src/assets/img/26.jpg');
+    background-image: url('../img/26.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
     margin-bottom: 30px;
 }
 /**************************/
-/* From Uiverse.io by cssbuttons-io */ 
+
 .button {
     display: inline-block;
     padding: 12px 24px;
@@ -127,9 +127,17 @@
         font-size: 1rem;
         padding: 8px 16px;
     }
+
+    .separator-line {
+        width: 150px;
+        height: 2px;
+        background-color: white;
+        margin: 0 auto 20px auto;
+        border: 8px;
+    }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 280px) and (max-width: 480px) {
     .contact-background-container {
         height: 500px;
     }
@@ -146,4 +154,13 @@
         font-size: 0.9rem;
         padding: 6px 12px;
     }
+
+    .separator-line {
+        width: 150px;
+        height: 2px;
+        background-color: white;
+        margin: 0 auto 20px auto;
+        border: 8px;
+    }
+    
 }
