@@ -65,7 +65,7 @@
 }
 
 .small-logo {
-    width: 100px; /* Adjust as needed */
+    width: 100px;
     height: auto;
 }
 
@@ -74,34 +74,36 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto auto;
         margin-top: 50px;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .image-large {
-        grid-column: span 1; /* Occupy full width in mobile view */
+        grid-column: span 1; 
     }
 
     .image-small:nth-of-type(1) {
-        grid-column: span 1; /* Pic1 */
+        grid-column: span 1;
     }
 
     .text-content:nth-of-type(1) {
-        grid-column: span 1; /* Content after Pic1 */
+        grid-column: span 1; 
     }
 
     .image-small:nth-of-type(2) {
-        grid-column: span 1; /* Pic2 */
+        grid-column: span 1;
     }
 
     .text-content:nth-of-type(2) {
-        grid-column: span 1; /* Content after Pic2 */
+        grid-column: span 1; 
     }
 
     .image-small:nth-of-type(3) {
-        grid-column: span 1; /* Pic3 */
+        grid-column: span 1; 
     }
 
     .text-content:nth-of-type(3) {
-        grid-column: span 1; /* Last content row */
+        grid-column: span 1; 
     }
 }
 
@@ -111,34 +113,36 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto auto auto auto;
         margin-top: 50px;
+        justify-content: center;
+        margin: 0 auto;
     }
 
-    /* Arrange elements as per the requirements */
+  
     .image-large {
         grid-column: span 2;
     }
 
     .image-small:nth-of-type(1) {
-        grid-column: span 1; /* Pic1 */
+        grid-column: span 1; 
     }
 
     .image-small:nth-of-type(2) {
-        grid-column: span 1; /* Pic2 */
+        grid-column: span 1; 
     }
 
     .text-content:nth-of-type(1) {
-        grid-column: span 2; /* Content after images */
+        grid-column: span 2;
     }
 
     .image-small:nth-of-type(3) {
-        grid-column: span 2; /* Pic3 */
+        grid-column: span 2; 
     }
 
     .text-content:nth-of-type(2) {
-        grid-column: span 2; /* Content after Pic3 */
+        grid-column: span 2; 
     }
 
     .text-content:nth-of-type(3) {
-        grid-column: span 2; /* Last content row */
+        grid-column: span 2; 
     }
 }
